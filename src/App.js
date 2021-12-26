@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/global.css';
+import Header from '../src/components/Header/Header';
+import Albums from './components/Albums/Albums';
+import Artists from './components/Artists/Artists';
+import Songs from './components/Songs/Songs';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className='App'>
+    <Header />
+    <Albums />
+    <Artists />
+    <Songs />
+  </div>
+);
 
 export default App;
